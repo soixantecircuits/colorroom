@@ -23,14 +23,16 @@ function initSocket(){
     ctn.style = 'background-color:' + colors[index];
   });
 
-  flywriterSocket
-  .on('live-change', function (color){
-    ctn.style = 'background-color:' + color;
-    colors[currentIndex] = color;
-  })
-  .on('reload-config', function(){
-    initColors();
-  })
+  if(config.liveUpdate){
+    flywriterSocket
+    .on('live-change', function (color){
+      ctn.style = 'background-color:' + color;
+      colors[currentIndex] = color;
+    })
+    .on('reload-config', function(){
+      initColors();
+    })
+  }
 }
 
 initColors();

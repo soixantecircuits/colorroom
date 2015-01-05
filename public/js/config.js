@@ -1,4 +1,5 @@
 var config = {
+  liveUpdate: true,
   limit: 48,
   colorsList: {
     file: 'config/colors.json',
