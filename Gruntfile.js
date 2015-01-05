@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     },
     watch: {
       configFiles: {
-        files: ['public/**', '!public/js/config.**', '!public/js/colors.**'],
+        files: ['public/**', '!public/js/config.**', '!public/config/colors.**'],
         options: {
           livereload: true
         }
