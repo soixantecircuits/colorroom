@@ -19,8 +19,8 @@ function initSocket(){
 
   pushermanSocket
   .on('button-pressed', function (index) {
-    currentIndex = index;
-    ctn.style = 'background-color:' + colors[index];
+    currentIndex = index - 1;
+    ctn.style = 'background-color:' + colors[index - 1];
   });
 
   if(config.liveUpdate){

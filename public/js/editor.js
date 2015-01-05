@@ -20,15 +20,16 @@ if(config.liveUpdate){
   function initSockets(){
     pushermanSocket
     .on('init-color', function (index){
-      $('#js-button-info').text(index);
-      currentIndex = index;
-      currentColor = colors[index];
-      createColorPicker(colors[index]);
+      currentIndex = index - 1;
+      $('#js-button-info').text(currentIndex);
+      currentColor = colors[currentIndex];
+      createColorPicker(colors[currentIndex]);
     })
     .on('button-pressed', function (index){
-      $('#js-button-info').text(index);
-      currentIndex = index;
-      updateColorPicker(colors[index]);
+      currentIndex = index - 1;
+      $('#js-button-info').text(currentIndex);
+      console.log(currentIndex);
+      updateColorPicker(colors[currentIndex]);
     });
 
     flywriterSocket
@@ -37,6 +38,23 @@ if(config.liveUpdate){
         path: config.colorsList.systemPath + config.colorsList.file,
         color: colors[currentIndex]
       });
+    });
+  }
+
+  function initUI(){
+    $('.js-prev').click(function (event){
+      if(currentIndex){
+        currentIndex--;
+        $('#js-button-info').text(currentIndex);
+        updateColorPicker(colors[currentIndex]);
+      }
+    });
+    $('.js-next').click(function (event){
+      if(currentIndex < colors.length){
+        currentIndex++;
+        $('#js-button-info').text(currentIndex);
+        updateColorPicker(colors[currentIndex]);
+      }
     });
   }
 
@@ -78,4 +96,5 @@ if(config.liveUpdate){
 
   initColors();
   initSockets();
+  initUI();
 }
