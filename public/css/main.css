@@ -15,6 +15,17 @@ html, body {
   transition: background-color .3s;
 }
 
+.btn-container {
+  margin: 20px 0;
+}
+
+.btn-container button {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.6em;
+}
+
 .cp-container .cp-hsvpanel{
   height: 400px;
 }

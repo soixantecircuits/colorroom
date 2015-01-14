@@ -1,51 +1,242 @@
-{
-    "colors": [
-        "#bc0b28",
-        "#b8344b",
-        "#c2645c",
-        "#dd8885",
-        "#cf1a77",
-        "#a34d56",
-        "#ce8785",
-        "#c2696f",
-        "#ffffff",
-        "#d51d37",
-        "#98242d",
-        "#be4147",
-        "#ea5e6b",
-        "#a11860",
-        "#ee85c7",
-        "#eb8262",
-        "#e99883",
-        "#da749b",
-        "#d04179",
-        "#9c4555",
-        "#eb695c",
-        "#6b305e",
-        "#ca66ae",
-        "#d4121d",
-        "#eb5547",
-        "#f66260",
-        "#7e453a",
-        "#5e2329",
-        "#d47a6f",
-        "#a56a5c",
-        "#901439",
-        "#861b23",
-        "#c1092b",
-        "#d31a20",
-        "#c0083e",
-        "#a53f67",
-        "#dc6b6d",
-        "#bf0f64",
-        "#bc4f64",
-        "#a10006",
-        "#a10034",
-        "#a70b23",
-        "#832325",
-        "#5B2F2B",
-        "#611F1D",
-        "#AD425F",
-        "#B70C47"
-    ]
-}
+{"colors": [
+    {
+        "code": "#bc0b28",
+        "number": 1,
+        "name": "Le Rouge"
+    },
+    {
+        "code": "#b8344b",
+        "number": 4,
+        "name": "Rouge Vermillon"
+    },
+    {
+        "code": "#c2645c",
+        "number": 5,
+        "name": "Beige etrusque"
+    },
+    {
+        "code": "#dd8885",
+        "number": 6,
+        "name": "Rose bergamasque"
+    },
+    {
+        "code": "#cf1a77",
+        "number": 7,
+        "name": "Le Fushia"
+    },
+    {
+        "code": "#a34d56",
+        "number": 9,
+        "name": "Rose stiletto"
+    },
+    {
+        "code": "#ce8785",
+        "number": 10,
+        "name": "Beige tribute"
+    },
+    {
+        "code": "#c2696f",
+        "number": 11,
+        "name": "Rose carnation"
+    },
+    {
+        "code": "#f0ece1",
+        "number": 12,
+        "name": "Blanc"
+    },
+    {
+        "code": "#d51d37",
+        "number": 13,
+        "name": "Le Orange Art Factory"
+    },
+    {
+        "code": "#98242d",
+        "number": 14,
+        "name": "Rouge feu"
+    },
+    {
+        "code": "#be4147",
+        "number": 16,
+        "name": "Rouge roxanne"
+    },
+    {
+        "code": "#ea5e6b",
+        "number": 17,
+        "name": "Rose dahlia"
+    },
+    {
+        "code": "#a11860",
+        "number": 19,
+        "name": "Fushia"
+    },
+    {
+        "code": "#ee85c7",
+        "number": 22,
+        "name": "Pink celebration"
+    },
+    {
+        "code": "#eb8262",
+        "number": 23,
+        "name": "Corail poétique Art Factory"
+    },
+    {
+        "code": "#e99883",
+        "number": 24,
+        "name": "Blond ingenu Art Factory"
+    },
+    {
+        "code": "#da749b",
+        "number": 26,
+        "name": "Rose libertin"
+    },
+    {
+        "code": "#d04179",
+        "number": 27,
+        "name": "Fushia innocent"
+    },
+    {
+        "code": "#9c4555",
+        "number": 28,
+        "name": "Rose bohème"
+    },
+    {
+        "code": "#eb695c",
+        "number": 36,
+        "name": "Corail légende Art Factory"
+    },
+    {
+        "code": "#6b305e",
+        "number": 39,
+        "name": "Pourpre divin"
+    },
+    {
+        "code": "#ca66ae",
+        "number": 49,
+        "name": "Rose tropical"
+    },
+    {
+        "code": "#d4121d",
+        "number": 50,
+        "name": "Corail urbain"
+    },
+    {
+        "code": "#eb5547",
+        "number": 51,
+        "name": "Rouge néon"
+    },
+    {
+        "code": "#f66260",
+        "number": 52,
+        "name": "Rouge rose best seller"
+    },
+    {
+        "code": "#7e453a",
+        "number": 53,
+        "name": "Beige promenade"
+    },
+    {
+        "code": "#5e2329",
+        "number": 54,
+        "name": "Prune avenue"
+    },
+    {
+        "code": "#d47a6f",
+        "number": 59,
+        "name": "Melon d'or Art Factory"
+    },
+    {
+        "code": "#a56a5c",
+        "number": 340,
+        "name": "Golden copper"
+    },
+    {
+        "code": "#c1092b",
+        "number": 55,
+        "name": "Rouge anonyme"
+    },
+    {
+        "code": "#d31a20",
+        "number": 56,
+        "name": "Orange indie"
+    },
+    {
+        "code": "#c0083e",
+        "number": 57,
+        "name": "Pink rhapsody"
+    },
+    {
+        "code": "#a53f67",
+        "number": 58,
+        "name": "Mauve nihiliste"
+    },
+    {
+        "code": "#901439",
+        "number": 64,
+        "name": "Fushia danger"
+    },
+    {
+        "code": "#861b23",
+        "number": 65,
+        "name": "Orange ardent"
+    },
+    {
+        "code": "#af4b59",
+        "number": 66,
+        "name": "Nom à trouver"
+    },
+    {
+        "code": "#e0675e",
+        "number": 70,
+        "name": "Le Nu"
+    },
+    {
+        "code": "#dc6b6d",
+        "number": 109,
+        "name": "Corail d'or"
+    },
+    {
+        "code": "#bf0f64",
+        "number": 110,
+        "name": "Fushia symbole"
+    },
+    {
+        "code": "#a10006",
+        "number": 201,
+        "name": "Orange imagine"
+    },
+    {
+        "code": "#a10034",
+        "number": 202,
+        "name": "Rose crazy"
+    },
+    {
+        "code": "#a70b23",
+        "number": 203,
+        "name": "Rouge rock"
+    },
+    {
+        "code": "#832325",
+        "number": 204,
+        "name": "Rouge scandal"
+    },
+    {
+        "code": "#5b2f2b",
+        "number": 205,
+        "name": "Prune virgin"
+    },
+    {
+        "code": "#611F1D",
+        "number": 206,
+        "name": "Grenat satisfaction"
+    },
+    {
+        "code": "#AD425F",
+        "number": 207,
+        "name": "Rose perfecto"
+    },
+    {
+        "code": "#B70C47",
+        "number": 208,
+        "name": "Fushia fétiche"
+    }
+]}

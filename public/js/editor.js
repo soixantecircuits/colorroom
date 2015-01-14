@@ -21,22 +21,24 @@ if(config.liveUpdate){
     pushermanSocket
     .on('init-color', function (index){
       currentIndex = index - 1;
-      $('#js-button-info').text(currentIndex);
-      currentColor = colors[currentIndex];
-      createColorPicker(colors[currentIndex]);
+      $('#js-button-colornumber').text('Color #' + colors[currentIndex].number + ' - ' + colors[currentIndex].name);
+      $('#js-button-colorindex').text('Button #' + currentIndex);
+      currentColor = colors[currentIndex].code;
+      createColorPicker(colors[currentIndex].code);
     })
     .on('button-pressed', function (index){
       currentIndex = index - 1;
-      $('#js-button-info').text(currentIndex);
+      $('#js-button-colornumber').text('Color #' + colors[currentIndex].number + ' - ' + colors[currentIndex].name);
+      $('#js-button-colorindex').text('Button #' + currentIndex);
       console.log(currentIndex);
-      updateColorPicker(colors[currentIndex]);
+      updateColorPicker(colors[currentIndex].code);
     });
 
     flywriterSocket
     .on('connect', function(){
       flywriterSocket.emit('binding', {
         path: config.colorsList.systemPath + config.colorsList.file,
-        color: colors[currentIndex]
+        color: colors[currentIndex].code
       });
     });
   }
@@ -45,15 +47,17 @@ if(config.liveUpdate){
     $('.js-prev').click(function (event){
       if(currentIndex){
         currentIndex--;
-        $('#js-button-info').text(currentIndex);
-        updateColorPicker(colors[currentIndex]);
+        $('#js-button-colornumber').text('Color #' + colors[currentIndex].number + ' - ' + colors[currentIndex].name);
+        $('#js-button-colorindex').text('Button #' + currentIndex);
+        updateColorPicker(colors[currentIndex].code);
       }
     });
     $('.js-next').click(function (event){
       if(currentIndex < colors.length){
         currentIndex++;
-        $('#js-button-info').text(currentIndex);
-        updateColorPicker(colors[currentIndex]);
+        $('#js-button-colornumber').text('Color #' + colors[currentIndex].number + ' - ' + colors[currentIndex].name);
+        $('#js-button-colorindex').text('Button #' + currentIndex);
+        updateColorPicker(colors[currentIndex].code);
       }
     });
   }
@@ -74,7 +78,7 @@ if(config.liveUpdate){
       onchange: function (container, color){
         var hex = '#' + toHex(color.rgba.r) + toHex(color.rgba.g) + toHex(color.rgba.b);
         document.body.style = 'background-color:' + hex;
-        colors[currentIndex] = hex;
+        colors[currentIndex].code = hex;
         currentColor = hex;
         flywriterSocket.emit('update-color', hex);
         autoSave();

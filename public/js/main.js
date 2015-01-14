@@ -7,7 +7,7 @@ function initColors(){
     if(data.colors.length){
       colors = [];
       $.each(data.colors, function (key, val) {
-        colors.push(val);
+        colors.push(val.code);
       });
     }
   });
